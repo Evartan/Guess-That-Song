@@ -1,0 +1,23 @@
+.DS_Store
+
+# backend
+__pycache__
+.venv
+.env
+
+# frontend
+node_modules
+dist
+
+# personal ignores?
+# justin
+spotify02.py
+setupProxy.js
+
+# eric
+
+# jeff
+.cache
+
+# vscode personal settings
+.vscode

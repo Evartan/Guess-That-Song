@@ -1,0 +1,9 @@
+services:
+  app:
+    build: . # folder to be used to build container
+    container_name: api-server  
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload --reload-include * # command override
+    ports:
+      - 8000:8000 # port mapping
+    volumes:
+      - .:/code/backend # thing changed in directory, automatically sync to /code/backend folder too
